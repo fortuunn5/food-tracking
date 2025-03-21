@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: food-tracking
+
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5431/postgres
+    username: myuser
+    password: secret
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        format_sql: true
